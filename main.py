@@ -1,8 +1,9 @@
 import pickle
 import streamlit as st
- 
-st.header("Crop Recommendation Project")
+
 model=pickle.load(open("Crop_recommendation_model.pkl","rb"))
+st.header("Crop Recommendation Project")
+
 
 nitro=st.number_input("Enter Nitrogen content in the soil (in mg/kg)",min_value=10,max_value=140)
 phosp=st.number_input("Enter Phosphorus content in the soil (in mg/kg)",min_value=5,max_value=145)
