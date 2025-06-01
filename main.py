@@ -1,15 +1,9 @@
 import pickle
 import streamlit as st
+import joblib
 
-@st.cache_resource
-def load_model():
-    try:
-        return pickle.load(open("Crop_recommendation_model.pkl", "rb"))
-    except Exception as e:
-        st.error(f"Error loading model: {e}")
-        return None
+model = joblib.load('Crop_recommendation_model.joblib')
 
-model = load_model()
 #model=pickle.load(open("Crop_recommendation_model.pkl","rb"))
 st.header("Crop Recommendation Project")
 
