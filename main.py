@@ -104,6 +104,6 @@ if st.button("Predict Crop"):
 
     elif val=="mothbeans":
         st.markdown(f"<h4> Recommended Crop: {val} </h4>",unsafe_allow_html=True)
-        st.image("C:/Users/janag/Desktop/crop recommendation project/mothbeans-image.jpg",width=400)
+        st.image("mothbeans-image.jpg",width=400)
     
         
